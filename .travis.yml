@@ -17,7 +17,7 @@ after_success:
  - docker push shayankureshi/multi-nginx
  - docker push shayankureshi/multi-server
  - docker push shayankureshi/multi-worker
- deploy:
+deploy:
   provider: elasticbeanstalk
   region: "us-east-2"
   app: "multi-docker"
